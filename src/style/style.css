@@ -827,8 +827,6 @@ html, body {
 .accordeon {
     margin-top: 96px;
 }
-.technologies {
-}
 .accordeon__item {
     padding: 25px 0;
     display: flex;
@@ -837,8 +835,7 @@ html, body {
 .accordeon__item:first-child {
     border-top: 1px solid #92A0B8;
 }
-
-.accordeon__title {
+.accordeon__title, .accordeon.job .accordeon__title{
     display: block;
     width: 40%;
     font-weight: 700;
@@ -862,7 +859,7 @@ html, body {
 .list__item {
     font-weight: 400;
     font-size: 15px;
-    line-height: 100%;
+    line-height: 150%;
 }
 .default__list .list__item:not(:last-child) {
     margin-right: 30px;
@@ -903,11 +900,11 @@ html, body {
     margin-top: 5px;
     flex-direction: column;
 }
-.accordeon.technologies .open__service .open__list, .accordeon.job .open__service .open__list {
+.accordeon.technologies .open__service .open__list {
     margin-left: 130px;
 }
-.accordeon.job .content__open .open__service .open__list {
-    margin-left: 100px;
+.accordeon.job .content__open .open__service .open__list.task {
+    margin-left: 200px;
 }
 .accordeon.job .content__open .open__service.open__list:nth-child(1){
 }

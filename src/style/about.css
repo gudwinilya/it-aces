@@ -19,6 +19,8 @@
 }
 .company-logo__circle {
     z-index: -2;
+    top: 40px;
+    left: -25px;
     position: absolute;
     width: 262px;
     height: 262px;
@@ -29,23 +31,23 @@
     box-shadow: -3px -2px 5px #FFFFFF, 4px 5px 13px rgba(0, 0, 0, 0.1), inset -6px -5px 4px #FFFFFF, inset 14px 3px 11px -4px rgba(0, 0, 0, 0.04);
 }
 .company-logo__text {
+    font-family: 'Sequel100Black-55';
     position: relative;
     width: 262px;
-    text-align: center;
+    /* text-align: center; */
     z-index: 2;
     background-image: linear-gradient(130deg, #1113CA 10%, #27FFF9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 105px;
-    line-height: 90%;
+    line-height: 95%;
 }
 .company-logo__text::after {
     position: absolute;
     top: 35px;
-    left: 180px;
+    left: 130px;
     content: " ";
     width: 25px;
     height: 25px;

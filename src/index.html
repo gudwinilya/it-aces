@@ -49,7 +49,19 @@
                     </div>
                 </div>
                 <div class="main-block__image _ibg">
-                    <img src="img/bg.png" alt="cover">
+                    
+                    <img
+                        srcset="
+                                img/main/bg_image_375.jpeg 350w,
+                                img/main/bg_image_768.jpeg 768w,
+                                img/main/bg_image_1100.jpeg 1100w,
+                                img/main/bg_image_1920.jpeg 1920w"
+                        sizes=" (max-width: 370px) 370px,
+                                (max-width: 780px) 780px,
+                                (max-width: 1150px) 1150px
+                                "
+                        src="img/main/bg_image_1920.jpeg"
+                        alt="cover">
                 </div>
             </div>
             <div class="page__about-block about-block">

@@ -1,10 +1,11 @@
 .page__projects {
     display: flex;
+    justify-content: space-between;
 }
 .projects {
 }
 .projects__info {
-    max-width: 495px;
+    width: 495px;
 }
 .projects__title {
     text-transform: uppercase;
@@ -25,7 +26,7 @@
 .page-number {
 }
 .projects__lines {
-    margin: 0 0 0 106px;
+    margin: 0 0 0 200px;
     padding-top: 5px;
     display: flex;
 }
@@ -78,8 +79,8 @@
 
 .tech-plates {
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
     display: flex;
 }
 .plate1__container, .plate2__container, .plate3__container, .plate4__container {
@@ -90,7 +91,7 @@
 }
 .plate1__container{
     z-index: 10;
-    top: -110%;
+    /* top: -110%; */
     left: 50%;
 }
 .plate1 {
@@ -129,8 +130,8 @@
     transform: rotateX(50deg) rotateZ(40deg) rotateY(-5deg);
 }
 .plate2__container {
-    top: -60%;
-    left: 400px;
+    top: 100px;
+    left: 350px;
     z-index: 9;
 }
 .plate_img2, .plate_img3 {
@@ -138,13 +139,13 @@
     opacity: 0.5;
 }
 .plate3__container {
-    top: -140%;
-    left: 390px;
+    top: -80px;
+    left: 300px;
     z-index: 8;
 }
 .plate4__container {
     perspective: none; 
-    top: -160%;
+    top: -130px;
     left: 400px;
     z-index: 11; 
 }
@@ -157,4 +158,45 @@
 .plate_img4 {
     width: 50%;
     opacity: 0.4;
+}
+
+@media (max-width:1160px) {
+
+    .projects__title {
+        font-size: 40px;
+        margin: 0 0 35px 0;
+    }
+    .projects__text {
+        font-size: 14px;
+    }
+    .company-logo__text {
+        font-size: 64px;
+    }
+    .projects__page-number {
+        margin-left: -20px;
+    }
+}
+@media (max-width:992px) {
+    .projects__lines {
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    .page__projects {
+        flex-direction: column;
+    }
+    .projects__info {
+        width: 80%;
+        order: 2;
+        margin-top: 20px;
+    }
+    .projects__title {
+        margin: 0 0 20px 0;
+    }
+    .projects__page-number {
+        margin-left: 0px;
+    }
+    /* .page__projects .page-number {
+        order: 2;
+    } */
 }

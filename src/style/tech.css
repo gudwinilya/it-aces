@@ -70,3 +70,28 @@
     height: 49px;
     background-color: #A4B0C6;
 }
+@media (max-width:1160px) {
+    .page__technologies-block {
+        margin-top: 80px;
+    }
+    .technologies-block__title {
+        font-size: 40px;
+    }
+}
+@media (max-width:992px) {
+    .technologies-block__lines {
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    .technologies-block__header {
+        flex-direction: column;
+    }
+    .technologies-block__header :first-child {
+        order: 2;
+    }
+    .technologies-block__page-number {
+        margin: 0 0 20px 0;
+        
+    }
+}

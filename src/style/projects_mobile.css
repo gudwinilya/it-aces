@@ -1,0 +1,30 @@
+.projects__mobile {
+    margin-top: 50px;
+    display: none;
+}
+._container {
+}
+.projects__mobile-container {
+    display: flex;
+    flex-direction: column;
+}
+.projects__mobile-container > *:not(:last-child) {
+    margin-bottom: 40px;
+}
+.projects__mobile-item {
+    display: flex;
+    flex-direction: column;
+}
+.projects__mobilre-cover {
+    max-width: 100%;
+    height: 245px;
+    background-color: rgb(231, 231, 231);
+    margin-bottom: 20px;
+}
+.projects__mobile-title {
+}
+@media (max-width:768px) {
+    .projects__mobile {
+        display: block;
+    }
+}

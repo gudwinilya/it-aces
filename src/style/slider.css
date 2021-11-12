@@ -187,9 +187,10 @@
     align-items: center;
     font-weight: 500;
     font-size: 30px;
-    line-height: 45px;
+    line-height: 100%;
     color: #448FFF;
     margin-right: 20px;
+    text-decoration: underline;
 }
 .projects-link__icon-img {
     margin-left: 20px;
@@ -258,5 +259,15 @@
     }
     .projects-link {
         margin-top: 60px; 
+    }
+}
+@media (max-width:650px) {
+    .projects-link {
+        justify-content: center;
+    }
+}
+@media (max-width: 260px) {
+    .projects-link__icon-img {
+        display: none;
     }
 }

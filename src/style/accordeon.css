@@ -58,17 +58,17 @@
     line-height: 100%;
 }
 .open__list-box {
-    margin: 7px 0 0 86px;
+    margin: 0 0 0 86px;
     display: flex;
 }
 .open__list-box .open__list {
 
     flex-direction: column;
 }
-.open__list-box .open__list:not(:last-child) {
+.open__list-box .open__list {
     margin-right: 15px;
 }
-.open__list-box .open__list .list__item:not(:last-child) {
+.open__list-box .open__list .list__item {
     margin-bottom: 10px;
 }
 .open__list {
@@ -87,14 +87,14 @@
 .accordeon.job .content__open .open__service .open__list.skill {
     margin-left: 82px;
 }
-.accordeon.job .content__open :first-child{
+.accordeon.job .content__open .open__service:first-child{
     margin-bottom: 60px;
 }
 .open__service .open__list .list__item {
     position: relative;
     padding-left: 15px;
 }
-.open__service .open__list .list__item:not(:last-child) {
+.open__service .open__list .list__item {
     margin-bottom: 20px;
 }
 .open__service .open__list .list__item::before {
@@ -134,6 +134,7 @@
     align-self: flex-end;
     margin: 60px 0 10px;
     font-weight: 500;
+    text-decoration: underline;
     font-size: 27px;
 }
 .job-link__hh {
@@ -146,8 +147,26 @@
     top: 4px;
     right: -20px;
 }
+@media (max-width: 1160px) {
+.accordeon__title {
+    width: 30%;
+    }
+    .accordeon.job .accordeon__title {
+        width: 45%;
+    }
+}
 
 @media (max-width: 992px) {
+    .accordeon {
+        margin-top: 70px;
+    }
+    .job-link { 
+        order: 3;
+        align-self: flex-start;
+    }
+    .accordeon.job .accordeon__title {
+        width: 90%;
+    }
     .content__default {
         display: none;
     }
@@ -155,14 +174,107 @@
         flex-wrap: wrap;
     }
     .accordeon__item.active :nth-child(2) {
-        margin-top: 10px;
         order: 3;
         flex: 1 1 100%;
+    }
+    .accordeon__item.active .content__open {
+        margin-top: 20px;
     }
     .open__list-box {
         margin: 0 0 0 86px;
         display: flex;
-}
+    }
+    .open__list-box .open__list {
+        flex-wrap: nowrap;
+    }
+}   
 @media (max-width: 768px) {
-
+    .accordeon.job .content__open .open__service:first-child{
+        margin-bottom: 30px;
+    }
+    .accordeon__item {
+        padding: 20px 0;
+    }
+    .job-link {
+        margin: 30px 0 20px;
+        font-weight: 500;
+        font-size: 27px;
+    }
+    .accordeon.job .content__open .open__service .open__list.task {
+        margin-left: 0;
+    }
+    .accordeon.job .content__open .open__service .open__list.skill {
+        margin-left: 0;
+    }
+    .open__tech {
+        flex-direction: column;
+        margin: 20px 0 30px;
+    }
+    .open__tech .open__list-box {
+        margin: 30px 0 0 0;
+    }
+    .open__service {
+        flex-direction: column;
+    }
+    .open__service .open__list { 
+        margin: 30px 0 0 0;
+    }
+    .accordeon.technologies .open__service .open__list {
+        margin: 30px 0 0 0;
+    }
 }
+@media (max-width: 500px) {
+    .close__img {
+        margin-top: 3px;
+        width: 15px;
+    }
+    .accordeon {
+        margin-top: 50px;
+    }
+    .accordeon__title, .accordeon.job .accordeon__title{
+        font-size: 18px;
+    }
+    .accordeon__close {
+        margin: 0 0 0 auto;
+    }
+}
+@media (max-width: 374px) {
+    .accordeon__item {
+        padding: 15px 0;
+    }
+    .open__list-box .open__list {
+        margin-right: 10px;
+    }
+    .list__item {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+    }
+    .job-link {
+        font-size: 22px;
+    }
+    .job-link__img {
+          width: 19px;
+          /* right: -10px; */
+      }
+}
+@media (max-width: 320px) {
+    .accordeon__title, .accordeon.job .accordeon__title{
+        font-size: 14px;
+    }
+}
+@media (max-width: 260px) {
+    .job-link {
+        font-size: 18px;
+        align-self: center;
+    }
+    .job-link__img {
+        display: none;
+    }
+}
+
+
+
+
+
+

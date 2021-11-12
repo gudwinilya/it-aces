@@ -202,3 +202,8 @@
         order: 2;
     } */
 }
+@media (max-width:350px) {
+    .projects__title {
+        font-size: 35px;
+    }
+}

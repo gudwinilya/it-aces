@@ -1,6 +1,6 @@
 .page__job {
     display: flex;
-    margin-top: 395px;
+    margin-top: 250px;
     flex-direction: column;
 }
 .page__job-header {
@@ -54,4 +54,45 @@
 }
 .subtitle span {
     font-weight: 700;
+}
+@media (max-width:1160px) {
+    .page__job-header .subtitle {
+        font-size: 40px;
+        line-height: 110%;
+    }
+    .page__job {
+        margin-top: 80px;
+    }
+}
+@media (max-width:992px) {
+    
+    .page__job-header .lines { 
+        display: none;
+    }
+    .page__job .page-number {
+        margin: 0;
+        order: 2;
+    }
+    .page__job-header {
+        justify-content: space-between;
+    }
+}
+@media (max-width:768px) {
+    .page__job {
+        margin-top: 60px;
+    }
+}
+@media (max-width:650px) {
+    .page__job-header {
+        flex-direction: column;
+    }
+    .page__job-header .subtitle {
+        order: 2;
+        margin: 20px 0 0;
+    }
+}
+@media (max-width:350px) {
+    .page__job-header .subtitle {
+        font-size: 35px;
+    }
 }

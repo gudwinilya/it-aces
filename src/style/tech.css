@@ -95,3 +95,8 @@
         
     }
 }
+@media (max-width:350px) {
+    .technologies-block__title {
+        font-size: 35px;
+    }
+}

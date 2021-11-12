@@ -4,7 +4,6 @@
     flex-direction: column;
 }
 .page__contacts-header {
-    width: 100%;
     display: flex;
 }
 .lines {
@@ -71,4 +70,40 @@
 }
 .contact__list-item:not(:last-child) {
     margin-bottom: 35px;
+}
+@media (max-width:1160px) {
+    .page__contacts .subtitle  {
+
+    }
+    .page__contacts {
+        margin-top: 80px;
+    }
+    .page__contacts .subtitle {
+        font-size: 40px;
+    }
+}
+@media (max-width:992px) {
+    .page__contacts .lines {
+        display: none;
+    }
+    .page__contacts .subtitle {
+        margin-right: 0;
+    }
+    .page__contacts-header {
+        justify-content: space-between;
+    }
+}
+@media (max-width:650px) {
+    .page__contacts-header {
+        flex-direction: column;
+    }
+    .page__contacts-header :first-child {
+        order: 2;
+        margin-top: 30px;
+    }
+}
+@media (max-width:350px) {
+    .page__contacts .subtitle {
+        font-size: 35px;
+    }
 }

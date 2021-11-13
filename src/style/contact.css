@@ -71,6 +71,12 @@
 .contact__list-item:not(:last-child) {
     margin-bottom: 35px;
 }
+.tel-link, .mail-link {
+    color: #FFFFFF;
+}
+.company-address {
+    font-style: normal;
+}
 @media (max-width:1160px) {
     .page__contacts .subtitle  {
 
@@ -92,14 +98,61 @@
     .page__contacts-header {
         justify-content: space-between;
     }
+    .circle__main {
+        width: 600px;
+        height: 600px;
+    }
+    .circle__small {
+        width: 450px;
+        height: 450px;
+    }
+    .contact__list-item {
+        font-size: 30px;
+    }
+}
+@media (max-width:768px) {
+
 }
 @media (max-width:650px) {
+    .page__contacts-circle {
+        margin: 80px 0;
+    }
     .page__contacts-header {
         flex-direction: column;
     }
     .page__contacts-header :first-child {
         order: 2;
         margin-top: 30px;
+    }
+    .circle__main {
+        width: 450px;
+        height: 450px;
+    }
+    .circle__small {
+        width: 350px;
+        height: 350px;
+    }
+    .contact__list-item {
+        font-size: 22px;
+    }
+    .contact__list-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:500px) {
+    .page__contacts-circle {
+        margin: 50px 0;
+    }
+    .circle__main {
+        width: 280px;
+        height: 280px;
+    }
+    .circle__small {
+        width:240px;
+        height: 240px;
+    }
+    .contact__list-item {
+        font-size: 16px;
     }
 }
 @media (max-width:350px) {

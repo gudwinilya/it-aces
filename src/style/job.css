@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 250px;
     flex-direction: column;
+    color: #ffffff;
 }
 .page__job-header {
     display: flex;
@@ -18,12 +19,12 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 100%;
-    color: #A4B0C6;
+    color: #ffffff;
 }
 .lines-item::before {
     content: " ";
     position: absolute;
-    background-color: #A4B0C6;
+    background-color: #ffffff;
 }
 .page__job .lines-item {
     padding-top: 55px;
@@ -45,6 +46,7 @@
 }
 .page__job .page-number {
     margin: 0 60px 0 365px;
+    color: #ffffff;
 }
 .subtitle {
     font-size: 55px;

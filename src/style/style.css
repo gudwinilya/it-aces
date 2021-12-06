@@ -74,7 +74,32 @@ html, body {
     }
 }
 .page {
+    position: relative;
     flex: 1 1 auto;
+    background: #2B7AE2;
+    z-index: -600;
+}
+.white-base {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    right: 0;
+    top: 950px;
+    background-color: white;
+    border-radius: 200px 0 0 0;
+    z-index: -500;
+}
+.blue-base {
+    position: relative;
+}
+.blue-base__bg { 
+    position: absolute;
+    width: 95%;
+    height: 106%;
+    top: -5%;
+    background: #2B7AE2;
+    z-index: -500;
+    border-radius: 0 200px 200px 0;
 }
 @font-face {
 	font-family: 'Inter';

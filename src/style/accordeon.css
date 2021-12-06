@@ -14,6 +14,13 @@
 .accordeon__item:first-child {
     border-top: 1px solid #92A0B8;
 }
+.page__job .accordeon__item {
+    border-bottom: 1px solid #ffffff;
+}
+.page__job .accordeon__item:first-child {
+    border-top: 1px solid #ffffff;
+}
+
 .accordeon__title, .accordeon.job .accordeon__title{
     display: block;
     width: 40%;
@@ -107,6 +114,9 @@
     border-radius: 50%;
     background: #333F53;
 }
+.accordeon.job .open__service .open__list .list__item::before {
+    background: #ffffff;
+}
 .open__service {
     display: flex;
 }
@@ -140,7 +150,7 @@
 .job-link__hh {
     position: relative;
     padding-right: 20px;
-    color: #333F53;
+    color: #ffffff;
 }
 .job-link__img {
     position: absolute;

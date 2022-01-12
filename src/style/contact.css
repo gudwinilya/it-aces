@@ -143,7 +143,7 @@
 }
 @media (max-width:500px) {
     .page__contacts-circle {
-        margin: 50px 0;
+        /* margin: 50px 0; */
     }
     .circle__main {
         width: 280px;

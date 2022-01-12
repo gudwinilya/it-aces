@@ -103,7 +103,6 @@ html, body {
     position: relative;
     z-index: -1000;
     padding: 150px 0;
-    /* margin-top: -150px; */
 }
 .blue-base::after {
     content: ' ';
@@ -134,6 +133,13 @@ html, body {
         border-radius: 150px 0 0 150px;
     }
 }
+@media (max-width:992px) {
+    .blue-base {
+        padding: 100px 0;
+    }
+    .white-base__bg {
+        padding-bottom: 100px;
+    }
 
 }
 @media (max-width:1440px) {
@@ -156,21 +162,17 @@ html, body {
         border-radius: 100px 0 0 100px;
     }
 }
-    @media (max-width:768px) {
-        .blue-base__bg { 
-            border-radius: 0;
-        }
-        .white-base {
-            border-radius: 0;
-        }
-        .white-base__bg {
-            padding-top: 100px;
-        }
-@media (max-width:1250px) and (min-width: 1160px) {
-    ._container {
-        /* padding: 0 50px; */
+@media (max-width:768px) {
+    .blue-base__bg { 
+        border-radius: 0;
     }
-}
+    .white-base {
+        border-radius: 0;
+    }
+    .white-base__bg {
+            padding-top: 100px;
+    }
+
 @media (max-width:1240px) and (min-width: 1160px) {
     .white-base__bg, {
         padding-left: 150px;

@@ -78,7 +78,6 @@ html, body {
     }
 }
 .page {
-   
     flex: 1 1 auto;
     background: #2B7AE2;
     z-index: -600;
@@ -170,18 +169,9 @@ html, body {
         border-radius: 0;
     }
     .white-base__bg {
-            padding-top: 100px;
-    }
-
-@media (max-width:1240px) and (min-width: 1160px) {
-    .white-base__bg, {
-        padding-left: 150px;
+        padding-top: 100px;
     }
 }
-
-
-/* ------FONTS------- */
-
 @font-face {
 	font-family: 'Inter';
 	src: url('../fonts/Inter-Regular.eot');

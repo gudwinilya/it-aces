@@ -36,7 +36,7 @@
 .page__contacts-circle {
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    margin: 100px 0 0 0;
     /* margin: 65px auto; */
 }
 .circle__main {
@@ -117,7 +117,7 @@
 }
 @media (max-width:650px) {
     .page__contacts-circle {
-        margin: 80px 0;
+        margin: 80px 0 0 0;
     }
     .page__contacts-header {
         flex-direction: column;

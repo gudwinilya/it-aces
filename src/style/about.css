@@ -214,3 +214,8 @@
         font-size: 12px;
     }
 }
+@media (max-width:1300px) {
+    .company-logo__circle {
+        display: none;
+    }
+}

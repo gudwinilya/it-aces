@@ -1,6 +1,6 @@
 .page__job {
     display: flex;
-    margin-top: 250px;
+    /* margin-top: 250px; */
     flex-direction: column;
     color: #ffffff;
 }
@@ -66,7 +66,7 @@
         line-height: 110%;
     }
     .page__job {
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
 }
 @media (max-width:992px) {
@@ -84,7 +84,7 @@
 }
 @media (max-width:768px) {
     .page__job {
-        margin-top: 60px;
+        /* margin-top: 60px; */
     }
 }
 @media (max-width:650px) {

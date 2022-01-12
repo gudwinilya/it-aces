@@ -57,6 +57,11 @@ html, body {
     padding: 0 15px;
     box-sizing: content-box;
 }
+@media (max-width:1240px) and (min-width: 1161px) {
+    ._container {
+        max-width: 1100px;
+    }
+}
 @media (max-width:1160px) {
     ._container {
         max-width: 970px;
@@ -80,41 +85,101 @@ html, body {
 }
 .white-base__bg {
     position: relative;
+    padding: 50px 0 150px 0;
+    margin-top: -150px;
 }
 .white-base {
     position: absolute;
     width: 95%;
-    height: 3807px;
+    height: 100%;
     right: 0;
-    top: 1000px;
+    top: 0;
     background-color: white;
     border-radius: 200px 0 0 200px;
     z-index: -500;
 }
 .blue-base {
-    background-color: #ffffff;
+    background-color: #2B7AE2;
     position: relative;
     z-index: -1000;
+    padding: 150px 0;
+    /* margin-top: -150px; */
 }
 .blue-base::after {
     content: ' ';
     position: absolute;
     right: 0;
-    top: -130px;
-    width: 100%;
-    height: 2745px;
+    top: -150px;
+    width: 20%;
+    height: 150%;
     background-color: #ffffff;
     z-index: -999;
 }
 .blue-base__bg { 
     position: absolute;
     width: 95%;
-    height: 106%;
-    top: -130px;
+    height: 100%;
+    top: 0;
     background: #2B7AE2;
     z-index: -500;
     border-radius: 0 200px 200px 0;
 }
+@media (max-width:1440px) {
+    .blue-base__bg { 
+        width: 98%;
+        border-radius: 0px 150px 150px 0px;
+    }
+    .white-base {
+        width: 98%;
+        border-radius: 150px 0 0 150px;
+    }
+}
+
+}
+@media (max-width:1440px) {
+    .blue-base__bg { 
+        width: 98%;
+        border-radius: 0px 150px 150px 0px;
+    }
+    .white-base {
+        width: 98%;
+        border-radius: 150px 0 0 150px;
+    }
+}
+@media (max-width:1040px) {
+    .blue-base__bg { 
+        width: 100%;
+        border-radius: 0px 100px 100px 0px;
+    }
+    .white-base {
+        width: 100%;
+        border-radius: 100px 0 0 100px;
+    }
+}
+    @media (max-width:768px) {
+        .blue-base__bg { 
+            border-radius: 0;
+        }
+        .white-base {
+            border-radius: 0;
+        }
+        .white-base__bg {
+            padding-top: 100px;
+        }
+@media (max-width:1250px) and (min-width: 1160px) {
+    ._container {
+        /* padding: 0 50px; */
+    }
+}
+@media (max-width:1240px) and (min-width: 1160px) {
+    .white-base__bg, {
+        padding-left: 150px;
+    }
+}
+
+
+/* ------FONTS------- */
+
 @font-face {
 	font-family: 'Inter';
 	src: url('../fonts/Inter-Regular.eot');

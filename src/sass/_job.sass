@@ -1,0 +1,64 @@
+.lines-list
+    display: flex;
+.lines-item
+    @include font-style('Inter',8px,400,#ffffff)
+    position: relative;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    line-height: 100%;
+    &::before
+        content: " ";
+        position: absolute;
+        background-color: #ffffff;
+.page__job
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    .page-number
+        margin: 0 60px 0 600px;
+        color: #ffffff;
+    &-header
+        display: flex;
+    .lines-item
+        padding-top: 55px;
+        &:not(:last-child)
+            margin-right: 35px;
+        &:first-child
+            margin-right: 100px;
+        &::before
+            top: 0;
+            left: 3px;
+            width: 1px;
+            height: 49px;
+        &:last-child::before
+            height: 115px;
+.page-number
+    color: #333f53;
+.subtitle
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+    span
+        font-weight: 700;
+@media (max-width:1160px)
+    .page__job-header .subtitle
+        font-size: 40px;
+        line-height: 110%;
+@media (max-width:992px)
+    .page__job .page-number
+        margin: 0;
+        order: 2;
+    .page__job-header
+        justify-content: space-between;
+        .lines
+            display: none;
+@media (max-width:650px)
+    .page__job-header
+        flex-direction: column;
+        .subtitle
+            order: 2;
+            margin: 20px 0 0;
+@media (max-width:350px)
+    .page__job-header .subtitle
+        font-size: 35px;

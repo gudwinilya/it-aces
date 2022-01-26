@@ -1,0 +1,209 @@
+.accordeon
+    margin-top: 96px;
+    .accordeon__close
+        margin: auto 0 0 auto;
+    &__item
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #92A0B8;
+        &.active
+            .accordeon__title
+                margin-top: 3px;
+                align-self: flex-start;
+        &:first-child
+            border-top: 1px solid #92A0B8;
+.page__job 
+    .accordeon__item
+        border-bottom: 1px solid #ffffff;
+        &:first-child
+            border-top: 1px solid #ffffff;
+.accordeon__title
+    display: block;
+    width: 40%;
+    flex-shrink: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 100%;
+    span
+        background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+.accordeon__content
+    margin-top: 5px;
+.default__list
+    display: flex;
+    .list__item:not(:last-child)
+        margin-right: 30px;
+.list__item
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+.content__open
+    display: flex;
+    flex-direction: column;
+.open__tech
+    display: flex;
+    margin-bottom: 60px;
+.open__title
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+.open__list-box
+    margin: 0 0 0 86px;
+    display: flex;
+    .open__list
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+        .list__item
+            margin-bottom: 10px;
+.open__service
+    display: flex;
+    .open__list
+        margin-top: 5px;
+        flex-direction: column;
+        .list__item
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            &::before
+                content: " ";
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #333F53;
+.accordeon.technologies 
+    .open__service 
+        .open__list
+            margin-left: 130px;
+.accordeon.job 
+    .content__open 
+        .open__service 
+            .open__list.task
+                margin-left: 130px;
+            .open__list.skill
+                margin-left: 82px;
+            &:first-child
+                margin-bottom: 60px;
+.accordeon.job .open__service .open__list .list__item::before
+    background: #ffffff;
+.accordeon__item.active .accordeon__close
+    // align-self: flex-start;
+    // order: 3;
+    margin: 0 0 0 auto;
+.accordeon__item.active .accordeon__close img
+    transform: rotate(45deg);
+.content__open
+    display: none;
+.accordeon__item.active 
+    .content__open
+        display: flex;
+    .content__default
+        display: none;
+.job-link
+    align-self: flex-end;
+    margin: 60px 0 10px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 27px;
+    &__hh
+        position: relative;
+        padding-right: 20px;
+        color: #ffffff;
+    &__img
+        position: absolute;
+        top: 4px;
+        right: -20px;
+@media (max-width: 1160px)
+    .accordeon__title
+        width: 30%;
+    .accordeon.job 
+        .accordeon__title
+            width: 45%;
+@media (max-width: 992px)
+    .accordeon
+        margin-top: 70px;
+    .job-link
+        order: 3;
+        align-self: flex-start;
+    .accordeon.job 
+        .accordeon__title
+            width: 90%;
+    .content__default
+        display: none;
+    .accordeon__item.active
+        flex-wrap: wrap;
+        .content__open
+            margin-top: 20px;
+    .open__list-box
+        margin: 0 0 0 86px;
+        display: flex;
+        .open__list
+            flex-wrap: nowrap;
+.accordeon__item.active .accordeon__close
+    align-self: flex-start;
+@media (max-width: 768px)
+    .accordeon__item
+        padding: 20px 0;
+    .job-link
+        margin: 30px 0 20px;
+        font-weight: 500;
+        font-size: 27px;
+    .accordeon.job 
+        .content__open 
+            .open__service
+                &:first-child
+                    margin-bottom: 30px;
+                .open__list.task
+                    margin-left: 0;
+                .open__list.skill
+                    margin-left: 0;
+    .open__tech
+        flex-direction: column;
+        margin: 20px 0 30px;
+    .open__tech .open__list-box
+        margin: 30px 0 0 0;
+    .open__service
+        flex-direction: column;
+    .open__service .open__list
+        margin: 30px 0 0 0;
+    .accordeon.technologies .open__service .open__list
+        margin: 30px 0 0 0;
+@media (max-width: 500px)
+    .close__img
+        align-self: flex-end;
+        margin-top: 3px;
+        width: 15px;
+    .accordeon
+        margin-top: 50px;
+    .accordeon__title, .accordeon.job .accordeon__title
+        font-size: 18px;
+    .accordeon__close
+        margin: 0 0 0 auto;
+@media (max-width: 374px)
+    .accordeon__item
+        padding: 15px 0;
+    .open__list-box .open__list
+        margin-right: 10px;
+    .list__item
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+    .job-link
+        font-size: 22px;
+        &__img
+            width: 19px;
+@media (max-width: 320px)
+    .accordeon__title, .accordeon.job .accordeon__title
+        font-size: 14px;
+@media (max-width: 260px)
+    .job-link
+        font-size: 18px;
+        align-self: center;
+        &__img
+            display: none;

@@ -1,0 +1,114 @@
+.page__contacts
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    &-header
+        margin-top: 180px;
+        display: flex;
+    .subtitle
+        margin-right: 195px;
+    .page-number
+        color: #FFFFFF;
+    .lines
+        margin-left: auto;
+        margin-top: 5px;
+    .lines-item
+        margin-left: auto;
+        padding-top: 55px;
+        position: relative;
+        &::before
+            top: 0;
+            left: 3px;
+            width: 1px;
+            height: 49px;
+        &:last-child
+            margin-left: 25px;
+    &-circle
+        display: flex;
+        justify-content: center;
+        margin: 100px 0 0 0;
+.circle__main
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 730px;
+    height: 730px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    box-shadow: -4px -4px 38px rgba(255, 255, 255, 0.25), 4px 4px 40px #5F85E8, inset -4px -4px 9px rgba(255, 255, 255, 0.25), inset 4px 4px 29px rgba(0, 0, 0, 0.3);
+.circle__small
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background: #2B7AE2;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.11), 0px 30px 60px rgba(0, 0, 0, 0.25);
+.contact__list-item
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 110%;
+    color: #FFFFFF;
+    &:not(:last-child)
+        margin-bottom: 35px;
+.tel-link, .mail-link
+    color: #FFFFFF;
+.company-address
+    font-style: normal;
+@media (max-width:1160px)
+    .page__contacts
+        margin-top: 0px;
+        .subtitle
+            font-size: 40px;
+@media (max-width:992px)
+    .page__contacts 
+        .lines
+            display: none;
+        .subtitle
+            margin-right: 0;
+        &-header
+            justify-content: space-between;
+            margin-top: 80px;
+    .circle__main
+        width: 600px;
+        height: 600px;
+    .circle__small
+        width: 450px;
+        height: 450px;
+    .contact__list-item
+        font-size: 30px;
+@media (max-width:650px)
+    .page__contacts
+        margin-top: 50px
+        &-circle
+            margin: 80px 0 0 0;
+        &-header
+            flex-direction: column;
+            margin-top: 80px;
+            .subtitle
+                order: 2;
+                margin-top: 30px;
+    .circle__main
+        width: 450px;
+        height: 450px;
+    .circle__small
+        width: 350px;
+        height: 350px;
+    .contact__list-item
+        font-size: 22px;
+        &:not(:last-child)
+            margin-bottom: 20px;
+@media (max-width:500px)
+    .circle__main
+        width: 280px;
+        height: 280px;
+    .circle__small
+        width: 240px;
+        height: 240px;
+    .contact__list-item
+        font-size: 16px;
+@media (max-width:350px)
+    .page__contacts .subtitle
+        font-size: 35px;

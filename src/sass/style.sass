@@ -1,0 +1,157 @@
+@import nullstyle
+@mixin font-style($ff,$fz,$fw,$c)
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+.wrapper 
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+._container 
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+@media (max-width:1240px) and (min-width: 1161px) 
+    ._container 
+        max-width: 1100px;
+@media (max-width:1160px) 
+    ._container 
+        max-width: 970px;
+@media (max-width:992px)
+    ._container 
+        max-width: 750px;
+@media (max-width:768px)
+    ._container 
+        max-width: none;
+.page 
+    flex: 1 1 auto;
+    background: #2B7AE2;
+    z-index: -600;
+
+.white-base 
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border-radius: 200px 0 0 200px;
+    z-index: -500;
+    &__bg 
+        position: relative;
+        padding: 50px 0 150px 0;
+        margin-top: -150px;
+.blue-base 
+    background-color: #2B7AE2;
+    position: relative;
+    z-index: -1000;
+    padding: 150px 0;
+    &__bg 
+        position: absolute;
+        width: 95%;
+        height: 100%;
+        top: 0;
+        background: #2B7AE2;
+        z-index: -500;
+        border-radius: 0 200px 200px 0;
+    &::after 
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: -150px;
+        width: 20%;
+        height: 150%;
+        background-color: #ffffff;
+        z-index: -999;
+
+@media (max-width:1440px) 
+    .blue-base__bg 
+        width: 98%;
+        border-radius: 0px 150px 150px 0px;
+    .white-base 
+        width: 98%;
+        border-radius: 150px 0 0 150px;
+@media (max-width:1040px) 
+    .blue-base__bg
+        width: 100%;
+        border-radius: 0px 100px 100px 0px;
+    .white-base
+        width: 100%;
+        border-radius: 100px 0 0 100px;
+@media (max-width:992px) 
+    .blue-base 
+        padding: 100px 0;
+    .white-base__bg 
+        padding-bottom: 100px;
+@media (max-width:768px)
+    .blue-base__bg
+        border-radius: 0;
+    .white-base
+        border-radius: 0;
+    .white-base__bg
+        padding-top: 100px;
+@font-face
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Regular.eot');
+	src: local('☺'), url('../fonts/Inter-Regular.woff') format('woff'), url('../fonts/Inter-Regular.ttf') format('truetype'), url('../fonts/Inter-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+@font-face
+	font-family: 'Soyuz Grotesk';
+	src: url('../fonts/Soyuz Grotesk Bold.eot');
+	src: local('☺'), url('../fonts/Soyuz Grotesk Bold.woff') format('woff'), url('../fonts/Soyuz Grotesk Bold.ttf') format('truetype'), url('../fonts/Soyuz Grotesk Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+@font-face
+	font-family: 'Sequel100Black-85';
+	src: url('../fonts/Sequel100Black-85.eot');
+	src: local('☺'), url('../fonts/Sequel100Black-85.woff') format('woff'), url('../fonts/Sequel100Black-85.ttf') format('truetype'), url('../fonts/Sequel100Black-85.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+@font-face
+	font-family: 'Sequel100Black-55';
+	src: url('../fonts/Sequel100Black-55.eot');
+	src: local('☺'), url('../fonts/Sequel100Black-55.woff') format('woff'), url('../fonts/Sequel100Black-55.ttf') format('truetype'), url('../fonts/Sequel100Black-55.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+@font-face
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Regular.eot');
+	src: local('☺'), url('../fonts/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular.ttf') format('truetype'), url('../fonts/Raleway-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+@font-face
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.eot');
+	src: local('☺'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+@font-face
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-SemiBold.eot');
+	src: local('☺'), url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf') format('truetype'), url('../fonts/Raleway-SemiBold.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+@font-face
+	font-family: 'Inter';
+	src: url('../fonts/Inter-ExtraLight.eot');
+	src: local('☺'), url('../fonts/Inter-ExtraLight.woff') format('woff'), url('../fonts/Inter-ExtraLight.ttf') format('truetype'), url('../fonts/Inter-ExtraLight.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+@import header
+@import main
+@import about
+@import projects
+@import projects_mobile
+@import slider
+@import tech
+@import accordeon
+@import job
+@import contact
+@import footer
+
+
+

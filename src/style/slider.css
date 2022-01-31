@@ -1,26 +1,9 @@
-.slider {
-}
 .slider__body {
     position: relative;
     margin: 200px 0 0 0;
     display: flex;
     align-items:center;
     justify-content: space-between;
-}
-.slider__button-left {
-}
-.button-left {
-}
-.button-left__img {
-}
-.button-right {
-}
-.button-right__img{
-
-}
-.slider__content {
-
-    
 }
 .slider__main-circle {
     border: 4px solid transparent;
@@ -45,8 +28,7 @@
     writing-mode: tb-rl;
 }
 .main-circle__date-list {
-    position: relative;
-    
+    position: relative;  
 }
 .main-circle__date-list:first-child::after {
     content: "";
@@ -57,9 +39,6 @@
     height: 48px;
     background: #FFFFFF;
 }
-.date-list {
-    
-}
 .date-list__item {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
@@ -67,10 +46,6 @@
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
-}
-.main-circle__prod {
-}
-.main-circle__prod-list {
 }
 .prod-list__item {
     font-family: 'Inter' sans-serif;
@@ -114,8 +89,6 @@
     width: 8px;
     height: 8px;
     background-color: #FFFFFF;
-}
-.slider__button-right {
 }
 .buble-case1 {
     position: absolute;

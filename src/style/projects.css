@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
 }
-.projects {
-}
 .projects__info {
     width: 495px;
 }
@@ -20,10 +18,6 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 170%;
-}
-.projects__page-number {
-}
-.page-number {
 }
 .projects__lines {
     margin: 0 0 0 200px;
@@ -79,8 +73,6 @@
 
 .tech-plates {
     position: relative;
-    /* margin-top: 100px;
-    margin-bottom: 100px; */
     display: flex;
 }
 .plate1__container, .plate2__container, .plate3__container, .plate4__container {
@@ -91,7 +83,6 @@
 }
 .plate1__container{
     z-index: 10;
-    /* top: -110%; */
     left: 50%;
 }
 .plate1 {

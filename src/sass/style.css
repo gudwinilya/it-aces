@@ -205,6 +205,14 @@ html, body {
 }
 
 @font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-ExtraLight.eot");
+  src: local("☺"), url("../fonts/Inter-ExtraLight.woff") format("woff"), url("../fonts/Inter-ExtraLight.ttf") format("truetype"), url("../fonts/Inter-ExtraLight.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Soyuz Grotesk';
   src: url("../fonts/Soyuz Grotesk Bold.eot");
   src: local("☺"), url("../fonts/Soyuz Grotesk Bold.woff") format("woff"), url("../fonts/Soyuz Grotesk Bold.ttf") format("truetype"), url("../fonts/Soyuz Grotesk Bold.svg") format("svg");
@@ -230,14 +238,6 @@ html, body {
 
 @font-face {
   font-family: 'Raleway';
-  src: url("../fonts/Raleway-Regular.eot");
-  src: local("☺"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.svg") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway';
   src: url("../fonts/Raleway-Bold.eot");
   src: local("☺"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway-Bold.svg") format("svg");
   font-weight: 700;
@@ -253,10 +253,10 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url("../fonts/Inter-ExtraLight.eot");
-  src: local("☺"), url("../fonts/Inter-ExtraLight.woff") format("woff"), url("../fonts/Inter-ExtraLight.ttf") format("truetype"), url("../fonts/Inter-ExtraLight.svg") format("svg");
-  font-weight: 200;
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.eot");
+  src: local("☺"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.svg") format("svg");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -2175,5 +2175,9 @@ html, body {
   .footer-logo {
     display: none;
   }
+}
+
+#sidebar {
+  width: 1160px;
 }
 /*# sourceMappingURL=style.css.map */

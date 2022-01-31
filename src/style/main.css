@@ -1,5 +1,3 @@
-.page__main-block {
-}
 .main-block {
     max-height: 1097px;
     position: relative;
@@ -14,13 +12,6 @@
     line-height: 100%;
     color: #FFFFFF;
     margin: 0 0 101px 0;
-}
-
-.main-block__tech {
-}
-.tech {
-}
-.tech__list {
 }
 .tech__item {
     font-weight: 400;

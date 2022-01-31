@@ -1,15 +1,9 @@
-.page__about-block {
-}
 .about-block {
     margin: 90px 0 250px; 
 }
 .about-block__container {
     display: flex;
     position: relative;
-}
-
-.about-block__company-logo {
-    
 }
 .company-logo {
     display: flex;
@@ -121,8 +115,7 @@
     background: linear-gradient(123.47deg, #1113CA -25.73%, #27FFF9 124.87%);
 }
 .about-block__info {
-    margin: 0 0 0 47px;
-    
+    margin: 0 0 0 47px; 
 }
 .about-block__title {
     font-size: 55px;
@@ -180,7 +173,6 @@
     .about-block__lines {
         display: none;
     }
-    
     .company-logo__circle {
         top: 0px;
     }

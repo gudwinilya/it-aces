@@ -20,7 +20,6 @@
 .page__job .accordeon__item:first-child {
     border-top: 1px solid #ffffff;
 }
-
 .accordeon__title, .accordeon.job .accordeon__title{
     display: block;
     width: 40%;
@@ -161,11 +160,10 @@
 .accordeon__title {
     width: 30%;
     }
-    .accordeon.job .accordeon__title {
-        width: 45%;
+.accordeon.job .accordeon__title {
+    width: 45%;
     }
 }
-
 @media (max-width: 992px) {
     .accordeon {
         margin-top: 70px;
@@ -197,7 +195,7 @@
     .open__list-box .open__list {
         flex-wrap: nowrap;
     }
-}   
+}
 @media (max-width: 768px) {
     .accordeon.job .content__open .open__service:first-child{
         margin-bottom: 30px;
@@ -265,8 +263,7 @@
     }
     .job-link__img {
           width: 19px;
-          /* right: -10px; */
-      }
+    }
 }
 @media (max-width: 320px) {
     .accordeon__title, .accordeon.job .accordeon__title{
@@ -282,9 +279,3 @@
         display: none;
     }
 }
-
-
-
-
-
-

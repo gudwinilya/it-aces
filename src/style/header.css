@@ -11,16 +11,6 @@
     align-items: center;
     justify-content: space-between;
 }
-.header__logo {
-}
-.logo__img {
-}
-.header__menu {
-}
-.menu {
-}
-.menu__burger {
-}
 .burger {
     display: flex;
     flex-direction: column;
